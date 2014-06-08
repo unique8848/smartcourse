@@ -1,3 +1,6 @@
 .*
 !.gitignore
 smartcourse.sublime-workspace
+h2database
+build
+smartcourse.i??

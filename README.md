@@ -2,7 +2,7 @@
 ## Tech Stack
 ####  Basis:
 * JDK 8
-* Mysql (localhost, root, 1111)
+* Mysql(pro)/H2(dev)
 #### Framework:
 * Spring (newest stable version)
 * AngularJs (newest stable version)
