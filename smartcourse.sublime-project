@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Volumes/projects/psn/smc/smartcourse",
+			"folder_exclude_patterns": ["target",".gradle"]
+		}
+	]
+}
