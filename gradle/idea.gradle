@@ -1,7 +1,16 @@
 apply plugin: 'idea'
 
-idea.project.ipr {
-    withXml { provider ->
-        provider.node.component.find { it.@name == 'VcsDirectoryMappings' }.mapping.@vcs = 'Git'
+idea {
+    project {
+        jdkName = '1.7'
+        languageLevel = 'JDK_1_7'
+
+        ipr {
+            withXml { provider ->
+                provider.node.component.find { it.@name == 'VcsDirectoryMappings' }.mapping.@vcs = 'Git'
+            }
+        }
     }
+
 }
+

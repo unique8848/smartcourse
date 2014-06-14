@@ -1,31 +1,24 @@
 buildscript {
     repositories {
+        mavenLocal()
         mavenCentral()
     }
 
     dependencies {
         classpath 'com.h2database:h2:1.3.170'
-        classpath 'org.flywaydb:flyway-gradle-plugin:3.0'
+//        classpath 'org.flywaydb:flyway-gradle-plugin:3.0'
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.1.RELEASE")
     }
 }
-
-apply from: './gradle/idea.gradle'
 
 project('services') {
     apply plugin: 'java'
-    apply plugin: 'flyway'
+    apply plugin: 'idea'
+    apply plugin: 'spring-boot'
 
-    dependencies {
-        compile 'org.slf4j:slf4j-api:1.7.5'
-        testCompile 'junit:junit:4.11'
-    }
-
-    flyway {
-        url = 'jdbc:h2:file:h2database/foobar'
-        user = 'sa'
-    }
+    idea.module.downloadSources = false
 }
 
-repositories {
-    mavenCentral()
-}
+apply from: './gradle/idea.gradle'
+//apply from: './gradle/flyway.gradle'
+
