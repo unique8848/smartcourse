@@ -1,4 +1,4 @@
-# SMART COURSE
+# SMART COURSE (不要在线修改此页面，会导致git版本混乱)
 ## Tech Stack
 ####  Basis:
 * JDK 8
